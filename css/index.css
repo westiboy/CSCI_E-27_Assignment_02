@@ -17,10 +17,18 @@ html {
   display: table;
   clear: both;
 }
-header h1 {
+header {
+	background: url(../img/3_LarsEdit_fullBar.png) no-repeat;
+	width: 97%;
+	height: 50%;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: bold;
-	background-color: #DCF0FF;
+}
+header h1 {
+	padding: 0.5em;
+	margin: 0;
+}
+header h1 a {
+	text-decoration: none;
 }
 h1, h2, h3, h4 {
 	font-family: 'Montserrat', sans-serif;
@@ -35,8 +43,8 @@ a {
 	color: white;
 }
 .wrapper {
-	width: 100%;
-	max-width: 100%;
+	width: 97%;
+	max-width: 1920px;
 	margin: 0 auto;
 	float: none;
 	background-color: #D0C8E8;
@@ -62,28 +70,8 @@ nav ul a {
 nav ul a:hover, h1 a:hover {
 	color: #D0C8E8;
 }
-main {
-	overflow: auto;
-	padding-right: 3em;
-	background-color: #DCF0FF;
-}
-main h2 {
-	font-size: 3em;
-	padding-top: 1em;
-}
-main p {
-	font-size: 1.25em;
-}
-main img {
-	margin-right: 1.75em;
-	float: left;
-}
-footer {
-	clear: both;
-	padding: 1.5em 0;
-	margin: 2em 0;
-	color: black;
-	text-align: center;
+div.col-1 img {
+	width: 100%;
 }
 
 /* grid settings */
@@ -93,18 +81,18 @@ footer {
     clear:both;
 } 
 [class*='col-'] {
-	margin-left: 4%;
+	margin-left: 3.333333%;
 	float: left;
 	min-height: 1px;
 }
 .col-1 {
-	width: 33.3%;
+	width: 31.11113%;
 }
 .col-2 {
-	width: 66.6%;
+	width: 65.55556%;
 }
 .col-3 {
-	width: 99%;
+	width: 96.66669%;
 }
 
 
