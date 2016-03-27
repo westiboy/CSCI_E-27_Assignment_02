@@ -26,6 +26,7 @@ html {
 
 header, h1, h2, h3, h4 {
   font-family: "Indie Flower", cursive;
+  font-weight: 600italic;
   background-color: #DCF0FF;
 }
 
@@ -55,25 +56,22 @@ nav {
   font-family: "Josefin Sans", sans-serif;
   background-color: #EEDCFF;
 }
-
 nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
   overflow: auto;
 }
-
 nav ul a {
   font-weight: bold;
   padding: 1em;
   float: left;
 }
-
-nav ul a:hover, h1 a:hover {
+nav ul a:hover, nav ul h1 a:hover {
   color: #D0C8E8;
 }
 
-div.col-1 img {
+div.col-1 img, div.col-2 img, div.col-3 img {
   width: 100%;
 }
 
@@ -84,13 +82,10 @@ div.col-1 img {
   clear: both;
 }
 
-[class*='col-'] {
+.col-1, .col-2, .col-3 {
   margin-left: 3.333333%;
   float: left;
   min-height: 1px;
-}
-
-.col-1 {
   width: 30%;
 }
 

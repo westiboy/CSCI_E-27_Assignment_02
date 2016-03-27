@@ -15,22 +15,27 @@ You should include at least two media queries in your CSS. You may have more tha
 The images that resize may be a solution that you download. Use one from class, or use another solution you’ve found that you like better.
 The site should include a navigation bar that links the relevant pages together, and it should be available on all pages of the site.
 Write your own content for the site. Please don’t use lorem ipsum or Wikipedia entries. The site can be about anything you want provided it’s work-safe, legal, ethical, and moral. If you are redesigning a page or two from a site, you may use that site’s content.
-Now add Sass
-Write, or rework, your CSS into Sass.
+
+* Now add Sass
+[X] Write, or rework, your CSS into Sass.
+
 When compiling your Sass, make sure the output is expanded, not nested or compact or compressed. (This is explained in the videos.)
-Make good use of variables, mixins, extend, nesting, math, built-in functions, etc.
-Use variables whenever values are repeated. Comment the section where variables are stored.
-Create at least 1 custom-coded mixin. Comment the section where mixins are stored.
-Demonstrate proper use of extend in at least 1 instance. This can extend an existing style or an extend-only class. Place a comment where the extend exists.
-Demonstrate nesting to 2 levels in at least one instance. Comment the area where nesting exists.
-Incorporate at least 2 instances of built-in Sass functions. You may use functions covered in class or any of the functions listed at the Sass website: http://sass-lang.com/documentation/Sass/Script/Functions.html (Links to an external site.) Comment where you’ve used a Sass function.
-Demonstrate the use of if/else in at least one instance. Comment your instance of if/else.
-You are not required to use loops or write your own functions with Sass, but you’re welcome to do so.
-Use at least 2 partial files in managing your Sass.
-Now add Compass
-Incorporate at least 3 Compass mixins in your code. Comment where those mixins occur and indicate they come from Compass.
-You may not count the reset CSS as a mixin. All other mixins count. 
-If you are ambitious and programmer-oriented, you may build custom functions or mixins using Compass helpers instead of using mixins directly. Be sure to document what you've done and explain it in the document when you turn in the assignment.
+
+* Make good use of variables, mixins, extend, nesting, math, built-in functions, etc.
+[X] Use variables whenever values are repeated. Comment the section where variables are stored.
+[X] Create at least 1 custom-coded mixin. Comment the section where mixins are stored.
+[] Demonstrate proper use of extend in at least 1 instance. This can extend an existing style or an extend-only class. Place a comment where the extend exists.
+[X] Demonstrate nesting to 2 levels in at least one instance. Comment the area where nesting exists.
+[] Incorporate at least 2 instances of built-in Sass functions. You may use functions covered in class or any of the functions listed at the Sass website: http://sass-lang.com/documentation/Sass/Script/Functions.html (Links to an external site.) Comment where you’ve used a Sass function.
+[] Demonstrate the use of if/else in at least one instance. Comment your instance of if/else.
+- You are not required to use loops or write your own functions with Sass, but you’re welcome to do so.
+[] Use at least 2 partial files in managing your Sass.
+
+* Now add Compass
+[] Incorporate at least 3 Compass mixins in your code. Comment where those mixins occur and indicate they come from Compass.
+- You may not count the reset CSS as a mixin. All other mixins count. 
+- If you are ambitious and programmer-oriented, you may build custom functions or mixins using Compass helpers instead of using mixins directly. Be sure to document what you've done and explain it in the document when you turn in the assignment.
+
 What Jen cares about
 You create a grid system that makes sense with your design. It doesn’t have to be complicated, messy, or long to do well. Simple is fine.
 Your Sass is DRY and well-formed.
