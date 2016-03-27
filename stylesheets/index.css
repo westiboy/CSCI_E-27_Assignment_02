@@ -7,49 +7,51 @@
   width: device-width;
 }
 /* Declare Border Box */
+/* line 6, ../sass/files/_basecss.scss */
 html {
   box-sizing: border-box;
 }
 
 /* this selector inherits to all elements in all pages */
+/* line 10, ../sass/files/_basecss.scss */
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
+/* line 15, ../sass/files/_basecss.scss */
 .group:after {
   content: "";
   display: table;
   clear: both;
 }
 
+/* line 20, ../sass/files/_basecss.scss */
 header, h1, h2, h3, h4 {
   font-family: "Indie Flower", cursive;
   font-weight: 600italic;
   background-color: #DCF0FF;
 }
 
+/* line 23, ../sass/files/_basecss.scss */
 header h1 a {
   text-decoration: none;
-  text-shadow: 1px 10px 2px #aaaaaa;
-  text-shadow: 1px 10px 2px rgba(220, 240, 255, 0.4) #aaaaaa;
 }
 
+/* line 26, ../sass/files/_basecss.scss */
 body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600italic;
   background-color: rgba(220, 240, 255, 0.4);
 }
 
+/* line 31, ../sass/files/_basecss.scss */
 a {
   color: white;
-  text-decoration: none;
-}
-a:hover, a:focus {
-  text-decoration: underline;
 }
 
+/* line 34, ../sass/files/_basecss.scss */
 .wrapper {
   width: 97%;
   max-width: 1920px;
@@ -58,36 +60,43 @@ a:hover, a:focus {
   background-color: rgba(220, 240, 255, 0.1);
 }
 
+/* line 43, ../sass/files/_basecss.scss */
 nav {
   font-family: "Josefin Sans", sans-serif;
   background-color: #DCF0FF;
 }
+/* line 46, ../sass/files/_basecss.scss */
 nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
   overflow: auto;
 }
+/* line 51, ../sass/files/_basecss.scss */
 nav ul a {
   font-weight: bold;
   padding: 1em;
   float: left;
 }
+/* line 56, ../sass/files/_basecss.scss */
 nav ul a:hover, nav ul h1 a:hover {
   color: rgba(220, 240, 255, 0.1);
 }
 
+/* line 63, ../sass/files/_basecss.scss */
 div.col-1 img, div.col-2 img, div.col-3 img {
   width: 100%;
 }
 
 /* grid settings */
+/* line 68, ../sass/files/_basecss.scss */
 .row::after {
   content: "";
   display: table;
   clear: both;
 }
 
+/* line 75, ../sass/files/_basecss.scss */
 .col-1, .col-2, .col-3 {
   margin-left: 3.333333%;
   float: left;
@@ -95,59 +104,46 @@ div.col-1 img, div.col-2 img, div.col-3 img {
   width: 30%;
 }
 
+/* line 81, ../sass/files/_basecss.scss */
 .col-2 {
   width: 60%;
 }
 
+/* line 85, ../sass/files/_basecss.scss */
 .col-3 {
   width: 96.66669%;
-}
-
-html, body {
-  height: 100%;
-}
-
-#root {
-  clear: both;
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin-bottom: -23px;
-}
-#root #root_footer {
-  height: 23px;
-}
-
-#footer {
-  clear: both;
-  position: relative;
-  height: 23px;
 }
 
 /* Media Queries */
 /* hi-res desktops up to and including 1920px width */
 @media only screen and (min-width: 1600px) {
+  /* line 5, ../sass/files/_mixins.scss */
   nav {
     background-color: #DCF0FF;
   }
 
+  /* line 6, ../sass/files/_mqhires.scss */
   header, h1, h2 {
     font-size: 2.25em;
   }
 
+  /* line 9, ../sass/files/_mqhires.scss */
   li {
     font-size: 1.5em;
   }
 
+  /* line 12, ../sass/files/_mqhires.scss */
   p {
     font-size: 2em;
   }
 
+  /* line 15, ../sass/files/_mqhires.scss */
   header {
     width: 97%;
     height: 50%;
   }
 
+  /* line 18, ../sass/files/_mqhires.scss */
   header h1 {
     padding: 0.5em;
     margin: 0;
@@ -156,23 +152,28 @@ html, body {
 }
 /* average desktops between tablet size and hi-res */
 @media only screen and (min-width: 1024px) and (max-width: 1599px) {
+  /* line 10, ../sass/files/_mixins.scss */
   nav {
     background-color: pink;
   }
 
+  /* line 5, ../sass/files/_mqavg.scss */
   header, h1, h2, li {
     font-size: 1.75em;
   }
 
+  /* line 8, ../sass/files/_mqavg.scss */
   p {
     font-size: 1.5em;
   }
 
+  /* line 11, ../sass/files/_mqavg.scss */
   header {
     width: 97%;
     height: 50%;
   }
 
+  /* line 14, ../sass/files/_mqavg.scss */
   header h1 {
     padding: 0.5em;
     margin: 0;
@@ -181,23 +182,28 @@ html, body {
 }
 /* IOS devices in porttrait */
 @media only screen and (min-width: 980px) and (max-width: 1023px) {
+  /* line 15, ../sass/files/_mixins.scss */
   nav {
     background-color: blue;
   }
 
+  /* line 5, ../sass/files/_mqios.scss */
   header, h1, h2, li {
     font-size: 1.5em;
   }
 
+  /* line 8, ../sass/files/_mqios.scss */
   p {
     font-size: 1.25em;
   }
 
+  /* line 11, ../sass/files/_mqios.scss */
   header {
     width: 97%;
     height: 50%;
   }
 
+  /* line 14, ../sass/files/_mqios.scss */
   header h1 {
     padding: 0.5em;
     margin: 0;
@@ -206,23 +212,28 @@ html, body {
 }
 /* lower-res tablets and phones */
 @media only screen and (min-width: 768px) and (max-width: 979px) {
+  /* line 20, ../sass/files/_mixins.scss */
   nav {
     background-color: green;
   }
 
+  /* line 5, ../sass/files/_mqlowres.scss */
   header, h1, h2, li {
     font-size: 1.25em;
   }
 
+  /* line 8, ../sass/files/_mqlowres.scss */
   p {
     font-size: 1em;
   }
 
+  /* line 11, ../sass/files/_mqlowres.scss */
   header {
     width: 97%;
     height: 50%;
   }
 
+  /* line 14, ../sass/files/_mqlowres.scss */
   header h1 {
     padding: 0.5em;
     margin: 0;
@@ -231,23 +242,28 @@ html, body {
 }
 /* smartphone */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 25, ../sass/files/_mixins.scss */
   nav {
     background-color: orange;
   }
 
+  /* line 5, ../sass/files/_mqsmrtphn.scss */
   header, h1, h2, li {
     font-size: 1em;
   }
 
+  /* line 8, ../sass/files/_mqsmrtphn.scss */
   p {
     font-size: .75em;
   }
 
+  /* line 11, ../sass/files/_mqsmrtphn.scss */
   header {
     width: 97%;
     height: 50%;
   }
 
+  /* line 14, ../sass/files/_mqsmrtphn.scss */
   header h1 {
     padding: 0.5em;
     margin: 0;

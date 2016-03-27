@@ -22,6 +22,7 @@ header, h1, h2, h3, h4  {
 }
 header h1 a {
 	text-decoration: none;
+	@include single-text-shadow(1px, 10px, 2px, $alt1-background-color);
 }
 body {
 	font-family: $secondary-font;
@@ -30,6 +31,7 @@ body {
 }
 a {
 	color: white;
+	@include hover-link;
 }
 .wrapper {
 	width: $wrpr-width;
@@ -86,3 +88,5 @@ div.col-1 img {
 	@extend .col-1;
 	width: $col-3-width;
 }
+
+@include sticky-footer(23px);

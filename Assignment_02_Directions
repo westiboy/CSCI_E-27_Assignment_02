@@ -32,7 +32,7 @@ When compiling your Sass, make sure the output is expanded, not nested or compac
 [X] Use at least 2 partial files in managing your Sass.
 
 * Now add Compass
-[] Incorporate at least 3 Compass mixins in your code. Comment where those mixins occur and indicate they come from Compass.
+[X] Incorporate at least 3 Compass mixins in your code. Comment where those mixins occur and indicate they come from Compass.
 - You may not count the reset CSS as a mixin. All other mixins count. 
 - If you are ambitious and programmer-oriented, you may build custom functions or mixins using Compass helpers instead of using mixins directly. Be sure to document what you've done and explain it in the document when you turn in the assignment.
 
