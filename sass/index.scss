@@ -19,6 +19,14 @@ $col-3-width: 96.66669%;
 	font-weight: 600italic;
 	background-color: $primary-background-color;
 }
+@mixin mq-heading {
+	width: 97%;
+	height: 50%;
+}
+@mixin mq-heading-h1 {
+	padding: 0.5em;
+	margin: 0;
+}
 
 @-ms-viewport{
   width: device-width;
@@ -116,12 +124,10 @@ div.col-1 img {
 		font-size: 2em;
 	}
 	header {
-		width: 97%;
-		height: 50%;
+		@include mq-heading;
 	}
 	header h1 {
-		padding: 0.5em;
-		margin: 0;
+		@include mq-heading-h1;
 		background: url(../img/Appian_Way_Pan_large.jpg) no-repeat;
 	}
 }
@@ -135,12 +141,10 @@ div.col-1 img {
 		font-size: 1.5em;
 	}
 	header {
-		width: 97%;
-		height: 50%;
+		@include mq-heading;
 	}
 	header h1 {
-		padding: 0.5em;
-		margin: 0;
+		@include mq-heading-h1;
 		background: url(../img/Appian_Way_Pan_med.jpg) no-repeat;
 	}
 }
@@ -154,12 +158,10 @@ div.col-1 img {
 		font-size: 1.25em;
 	}
 	header {
-		width: 97%;
-		height: 50%;
+		@include mq-heading;
 	}
 	header h1 {
-		padding: 0.5em;
-		margin: 0;
+		@include mq-heading-h1;
 		background: url(../img/Appian_Way_Pan_small.jpg) no-repeat;
 	}
 }
@@ -173,12 +175,10 @@ div.col-1 img {
 		font-size: 1em;
 	}
 	header {
-		width: 97%;
-		height: 50%;
+		@include mq-heading;
 	}
 	header h1 {
-		padding: 0.5em;
-		margin: 0;
+		@include mq-heading-h1;
 		background: url(../img/Appian_Way_Pan_small.jpg) no-repeat;
 	}
 }
@@ -192,12 +192,10 @@ div.col-1 img {
 		font-size: .75em;
 	}
 	header {
-		width: 97%;
-		height: 50%;
+		@include mq-heading;
 	}
 	header h1 {
-		padding: 0.5em;
-		margin: 0;
+		@include mq-heading-h1;
 		background: url(../img/Appian_Way_Pan_small.jpg) no-repeat;
 	}
 }
