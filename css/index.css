@@ -11,7 +11,6 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
-  /*	border: 1px solid red; */
 }
 
 .group:after {
@@ -20,21 +19,10 @@ html {
   clear: both;
 }
 
-header, h1, h2, h3, h4, h5 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+header, h1, h2, h3, h4 {
+  font-family: "Indie Flower", cursive;
+  font-weight: 600italic;
   background-color: #DCF0FF;
-}
-
-header {
-  background: url(../img/3_LarsEdit_fullBar.png) no-repeat;
-  width: 97%;
-  height: 50%;
-}
-
-header h1 {
-  padding: 0.5em;
-  margin: 0;
 }
 
 header h1 a {
@@ -42,7 +30,8 @@ header h1 a {
 }
 
 body {
-  font-family: "Josefin" Sans;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600italic;
   background-color: #E9EAFF;
 }
 
@@ -59,6 +48,7 @@ a {
 }
 
 nav {
+  font-family: "Josefin Sans", sans-serif;
   background-color: #EEDCFF;
 }
 
@@ -69,12 +59,7 @@ nav ul {
   overflow: auto;
 }
 
-nav ul li {
-  font-family: "Montserrat", sans-serif;
-}
-
 nav ul a {
-  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   padding: 1em;
   float: left;
@@ -106,11 +91,122 @@ div.col-1 img {
 }
 
 .col-2 {
-  width: 65.55556%;
+  width: 60%;
 }
 
 .col-3 {
   width: 96.66669%;
+}
+
+/* Media Queries */
+/* hi-res desktops up to and including 1920px width */
+@media only screen and (min-width: 1600px) {
+  header, h1, h2 {
+    font-size: 2.25em;
+  }
+
+  li {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 2em;
+  }
+
+  header {
+    width: 97%;
+    height: 50%;
+  }
+
+  header h1 {
+    padding: 0.5em;
+    margin: 0;
+    background: url(../img/Appian_Way_Pan_large.jpg) no-repeat;
+  }
+}
+/* average desktops between tablet size and hi-res */
+@media only screen and (min-width: 1024px) and (max-width: 1599px) {
+  header, h1, h2, li {
+    font-size: 1.75em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  header {
+    width: 97%;
+    height: 50%;
+  }
+
+  header h1 {
+    padding: 0.5em;
+    margin: 0;
+    background: url(../img/Appian_Way_Pan_med.jpg) no-repeat;
+  }
+}
+/* IOS devices in porttrait */
+@media only screen and (min-width: 980px) and (max-width: 1023px) {
+  header, h1, h2, li {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1.25em;
+  }
+
+  header {
+    width: 97%;
+    height: 50%;
+  }
+
+  header h1 {
+    padding: 0.5em;
+    margin: 0;
+    background: url(../img/Appian_Way_Pan_small.jpg) no-repeat;
+  }
+}
+/* lower-res tablets and phones */
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  header, h1, h2, li {
+    font-size: 1.25em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  header {
+    width: 97%;
+    height: 50%;
+  }
+
+  header h1 {
+    padding: 0.5em;
+    margin: 0;
+    background: url(../img/Appian_Way_Pan_small.jpg) no-repeat;
+  }
+}
+/* smartphone */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  header, h1, h2, li {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: .75em;
+  }
+
+  header {
+    width: 97%;
+    height: 50%;
+  }
+
+  header h1 {
+    padding: 0.5em;
+    margin: 0;
+    background: url(../img/Appian_Way_Pan_small.jpg) no-repeat;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

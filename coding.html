@@ -4,9 +4,8 @@
 	<meta charset="UTF-8">
 	<title>CSCI_E-27_Assignment_01</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href='https://fonts.googleapis.com/css?family=Montserrat|Josefin+Sans|Varela+Round' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600italic|Indie+Flower' rel='stylesheet' type='text/css'><link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/index.css">
-	<link rel="stylesheet" href="css/normalize.css">
 	<script>
 	    // Picture element HTML5 shiv
 	    document.createElement( "picture" );
@@ -14,10 +13,11 @@
 	<script src="js/picturefill.min.js" async></script>
 </head>
 <body>
-	<div id="wrapper">
+	<div class="wrapper">
 		<div class="row">
-			<header class="col-1">
-				<h1><a href="index.html">
+			<header class="col-3">
+				<h1>
+				<a href="index.html">
 					Aran Gilmore Photography</a>
 				</h1>
 			</header>
@@ -31,26 +31,34 @@
 				</ul>
 			</nav>
 		</div>
-		<div class="row sameHeights">
-			<div class="col-1" data-key="sameHeights">
+		<div class="row">
+			<div class="col-3" data-key="sameHeights">
 				<h2>Coding</h2>
-				<!-- original image source https://i.ytimg.com/vi/TInfxe7c7yA/maxresdefault.jpg -->
-				<a href="/coding.html"><img src="img/Matrix_Coding_large.png" alt="Matrix Code, click me"></a>
-				<p>While certainly not an absolute newbie, I'm no expert at coding. But I'm getting better, and if you're curious, here's some examples of my coding and a link to my <a href="https://github.com/westiboy">Github</a> page.</p>
-				
+				<p>While certainly not an absolute newbie, I'm no expert at coding. But I'm getting better, and if you're curious, here's some examples of my coding and a link to my <a href="https://github.com/westiboy" target="_blank">Github</a> page.</p>
 			</div>
 			<div class="col-1" data-key="sameHeights">
-				<h2>Photography</h2>
-				<a href="/photography.html"><img src="img/McKeeney_Backyard_BW_large.png" alt="Black & White photo of backyard with stormclouds, click me"></a>
-				<p>I've been a photographer for most of my life, and this page links to some of my work, as well as sites where you can view more, or purchase prints.</p>
+				<h2>"44 Bits of Entropy" password generator*</h2>
+				<a href="http://p2.arangilmorephotography.com/" target="_blank"><img src="img/Entropy.png" alt="'44 Bits of Entropy' password generator"></a>
+				<p>A project I worked on for a Web Apps class I took.</p>
 			</div>
-			<div class="col-1" data-key="sameHeights">
-				<h2>Miscellaneous</h2>
-				<img src="img/Europe_2015_PompBench_large.png" alt="Abstract silver image, click me"></a>
-				<p>Still working out what to put here.</p>
+			<div class="col-2" data-key="sameHeights">
+				<h2>Lorem Ipsum Users and Text generator</h2>
+				<a href="http://p3.arangilmorephotography.com/" target="_blank"><img src="img/Lorem_Ipsum.png" alt="Lorem Ipsum Users and Text generator"></a>
+				<p>Copywriters and graphic designers user random text when designing, in order to focus on the design rather than the text. The most common of these types of text is referred to as Lorem Ipsum, as it's essentially random words in Latin. The first of the links below will generate some paragraphs of Lorem Ipsum text. The second will generate a series of random users.</p>
 			</div>
+
 		</div>
 	</div>
-	
+	<script src="js/eqheight.js"></script>
+	<script type="text/javascript">
+		if ('addEventListener' in window) {
+		    window.addEventListener('resize', function(){
+		        sameHeights();
+		    });
+		    window.addEventListener('load', function(){
+		        sameHeights();
+		    });
+		}
+	</script>
 </body>
 </html>
