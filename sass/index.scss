@@ -2,8 +2,10 @@
 
 //variables
 $primary-background-color: #DCF0FF;
-$secondary-background-color: #D0C8E8;
-$alt1-background-color: #EEDCFF;
+//sass function transparentize
+$secondary-background-color: transparentize($primary-background-color, 0.9);
+//sass function transparentize
+$alt1-background-color: opacify($secondary-background-color, 0.3);
 $primary-font: 'Indie Flower', cursive;
 $secondary-font: 'Josefin Sans', sans-serif;
 $wrpr-width: 97%;
@@ -15,7 +17,7 @@ $col-3-width: 96.66669%;
 
 //media query variables begin
 /* hi-res desktops up to and including 1920px width */
-$media-screen-hires-desk-min: 1600px;
+$media-screen-hires-desk-min-width: 1600px;
 /* average desktops between tablet size and hi-res */
 $media-screen-avg-min-width: 1024px;
 $media-screen-avg-max-width: 1599px;
@@ -31,6 +33,35 @@ $media-screen-smrtphn-max-width: 767px;
 //media query variables end
 
 //mixins
+//media query mixin/if/else
+@mixin mq-color($breakpoint: $media-screen-smrtphn-min-width) {
+	@if $breakpoint == $media-screen-hires-desk-min-width {
+		nav {
+		  background-color: $primary-background-color;
+		}
+	}
+	@else if $breakpoint == $media-screen-avg-min-width {
+		nav {
+		  background-color: pink;
+		}
+	}
+	@else if $breakpoint == $media-screen-ios-min-width {
+		nav {
+		  background-color: blue;
+		}
+	}
+	@else if $breakpoint == $media-screen-lowres-min-width {
+		nav {
+		  background-color: green;
+		}
+	}
+	@else if $breakpoint == $media-screen-smrtphn-min-width {
+		nav {
+		  background-color: orange;
+		}
+	}
+}
+
 @mixin prm-headings {
 	font-family: $primary-font;
 	font-weight: 600italic;
@@ -90,7 +121,7 @@ a {
 //nesting begin
 nav {
 	font-family: $secondary-font;
-	background-color: #EEDCFF;
+	background-color: $primary-background-color;
 	ul {
 		margin: 0;
 		padding: 0;
@@ -138,7 +169,9 @@ div.col-1 img {
 
 /* Media Queries */
 /* hi-res desktops up to and including 1920px width */
-@media only screen and (min-width: $media-screen-hires-desk-min) {
+@media only screen and (min-width: $media-screen-hires-desk-min-width) {
+	@include mq-color($media-screen-hires-desk-min-width);
+
 	header, h1, h2 {
 		font-size: 2.25em;
 	}
@@ -159,6 +192,8 @@ div.col-1 img {
 
 /* average desktops between tablet size and hi-res */
 @media only screen and (min-width: $media-screen-avg-min-width) and (max-width: $media-screen-avg-max-width){
+	@include mq-color($media-screen-avg-min-width);
+
 	header, h1, h2, li {
 		font-size: 1.75em;
 	}
@@ -176,6 +211,8 @@ div.col-1 img {
 
 /* IOS devices in porttrait */
 @media only screen and (min-width: $media-screen-ios-min-width) and (max-width: $media-screen-ios-max-width){
+	@include mq-color($media-screen-ios-min-width);
+
 	header, h1, h2, li {
 		font-size: 1.5em;
 	}
@@ -193,6 +230,8 @@ div.col-1 img {
 
 /* lower-res tablets and phones */
 @media only screen and (min-width: $media-screen-lowres-min-width) and (max-width: $media-screen-lowres-max-width){
+	@include mq-color($media-screen-lowres-min-width);
+
 	header, h1, h2, li {
 		font-size: 1.25em;
 	}
@@ -210,6 +249,8 @@ div.col-1 img {
 
 /* smartphone */
 @media only screen and (min-width: $media-screen-smrtphn-min-width) and (max-width: $media-screen-smrtphn-max-width){
+	@include mq-color($media-screen-smrtphn-min-width);
+
 	header, h1, h2, li {
 		font-size: 1em;
 	}

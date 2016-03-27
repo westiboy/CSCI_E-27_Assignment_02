@@ -37,7 +37,7 @@ header h1 a {
 body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600italic;
-  background-color: #EEDCFF;
+  background-color: rgba(220, 240, 255, 0.4);
 }
 
 a {
@@ -49,12 +49,12 @@ a {
   max-width: 1920px;
   margin: 0 auto;
   float: none;
-  background-color: #D0C8E8;
+  background-color: rgba(220, 240, 255, 0.1);
 }
 
 nav {
   font-family: "Josefin Sans", sans-serif;
-  background-color: #EEDCFF;
+  background-color: #DCF0FF;
 }
 nav ul {
   margin: 0;
@@ -68,7 +68,7 @@ nav ul a {
   float: left;
 }
 nav ul a:hover, nav ul h1 a:hover {
-  color: #D0C8E8;
+  color: rgba(220, 240, 255, 0.1);
 }
 
 div.col-1 img, div.col-2 img, div.col-3 img {
@@ -100,6 +100,10 @@ div.col-1 img, div.col-2 img, div.col-3 img {
 /* Media Queries */
 /* hi-res desktops up to and including 1920px width */
 @media only screen and (min-width: 1600px) {
+  nav {
+    background-color: #DCF0FF;
+  }
+
   header, h1, h2 {
     font-size: 2.25em;
   }
@@ -125,6 +129,10 @@ div.col-1 img, div.col-2 img, div.col-3 img {
 }
 /* average desktops between tablet size and hi-res */
 @media only screen and (min-width: 1024px) and (max-width: 1599px) {
+  nav {
+    background-color: pink;
+  }
+
   header, h1, h2, li {
     font-size: 1.75em;
   }
@@ -146,6 +154,10 @@ div.col-1 img, div.col-2 img, div.col-3 img {
 }
 /* IOS devices in porttrait */
 @media only screen and (min-width: 980px) and (max-width: 1023px) {
+  nav {
+    background-color: blue;
+  }
+
   header, h1, h2, li {
     font-size: 1.5em;
   }
@@ -167,6 +179,10 @@ div.col-1 img, div.col-2 img, div.col-3 img {
 }
 /* lower-res tablets and phones */
 @media only screen and (min-width: 768px) and (max-width: 979px) {
+  nav {
+    background-color: green;
+  }
+
   header, h1, h2, li {
     font-size: 1.25em;
   }
@@ -188,6 +204,10 @@ div.col-1 img, div.col-2 img, div.col-3 img {
 }
 /* smartphone */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  nav {
+    background-color: orange;
+  }
+
   header, h1, h2, li {
     font-size: 1em;
   }

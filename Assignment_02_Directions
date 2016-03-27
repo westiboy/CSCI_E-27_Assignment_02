@@ -24,10 +24,10 @@ When compiling your Sass, make sure the output is expanded, not nested or compac
 * Make good use of variables, mixins, extend, nesting, math, built-in functions, etc.
 [X] Use variables whenever values are repeated. Comment the section where variables are stored.
 [X] Create at least 1 custom-coded mixin. Comment the section where mixins are stored.
-[] Demonstrate proper use of extend in at least 1 instance. This can extend an existing style or an extend-only class. Place a comment where the extend exists.
+[X] Demonstrate proper use of extend in at least 1 instance. This can extend an existing style or an extend-only class. Place a comment where the extend exists.
 [X] Demonstrate nesting to 2 levels in at least one instance. Comment the area where nesting exists.
-[] Incorporate at least 2 instances of built-in Sass functions. You may use functions covered in class or any of the functions listed at the Sass website: http://sass-lang.com/documentation/Sass/Script/Functions.html (Links to an external site.) Comment where you’ve used a Sass function.
-[] Demonstrate the use of if/else in at least one instance. Comment your instance of if/else.
+[X] Incorporate at least 2 instances of built-in Sass functions. You may use functions covered in class or any of the functions listed at the Sass website: http://sass-lang.com/documentation/Sass/Script/Functions.html (Links to an external site.) Comment where you’ve used a Sass function.
+[X] Demonstrate the use of if/else in at least one instance. Comment your instance of if/else.
 - You are not required to use loops or write your own functions with Sass, but you’re welcome to do so.
 [] Use at least 2 partial files in managing your Sass.
 
