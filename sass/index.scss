@@ -3,7 +3,7 @@
 //variables
 $primary-background-color: #DCF0FF;
 $secondary-background-color: #D0C8E8;
-$alt1-background-color: #E9EAFF;
+$alt1-background-color: #EEDCFF;
 $primary-font: 'Indie Flower', cursive;
 $secondary-font: 'Josefin Sans', sans-serif;
 $wrpr-width: 97%;
@@ -13,10 +13,27 @@ $col-1-width: 30%;
 $col-2-width: 60%;
 $col-3-width: 96.66669%;
 
+//media query variables begin
+/* hi-res desktops up to and including 1920px width */
+$media-screen-hires-desk-min: 1600px;
+/* average desktops between tablet size and hi-res */
+$media-screen-avg-min-width: 1024px;
+$media-screen-avg-max-width: 1599px;
+/* IOS devices in porttrait */
+$media-screen-ios-min-width: 980px;
+$media-screen-ios-max-width: 1023px;
+/* lower-res tablets and phones */
+$media-screen-lowres-min-width: 768px;
+$media-screen-lowres-max-width: 979px;
+/* smartphone */
+$media-screen-smrtphn-min-width: 480px;
+$media-screen-smrtphn-max-width: 767px;
+//media query variables end
+
 //mixins
 @mixin prm-headings {
 	font-family: $primary-font;
-	font-weight: 600italic;
+//	font-weight: 600italic;
 	background-color: $primary-background-color;
 }
 @mixin mq-heading {
@@ -113,7 +130,7 @@ div.col-1 img {
 
 /* Media Queries */
 /* hi-res desktops up to and including 1920px width */
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: $media-screen-hires-desk-min) {
 	header, h1, h2 {
 		font-size: 2.25em;
 	}
@@ -133,7 +150,7 @@ div.col-1 img {
 }
 
 /* average desktops between tablet size and hi-res */
-@media only screen and (min-width: 1024px) and (max-width: 1599px){
+@media only screen and (min-width: $media-screen-avg-min-width) and (max-width: $media-screen-avg-max-width){
 	header, h1, h2, li {
 		font-size: 1.75em;
 	}
@@ -150,7 +167,7 @@ div.col-1 img {
 }
 
 /* IOS devices in porttrait */
-@media only screen and (min-width: 980px) and (max-width: 1023px){
+@media only screen and (min-width: $media-screen-ios-min-width) and (max-width: $media-screen-ios-max-width){
 	header, h1, h2, li {
 		font-size: 1.5em;
 	}
@@ -167,7 +184,7 @@ div.col-1 img {
 }
 
 /* lower-res tablets and phones */
-@media only screen and (min-width: 768px) and (max-width: 979px){
+@media only screen and (min-width: $media-screen-lowres-min-width) and (max-width: $media-screen-lowres-max-width){
 	header, h1, h2, li {
 		font-size: 1.25em;
 	}
@@ -184,7 +201,7 @@ div.col-1 img {
 }
 
 /* smartphone */
-@media only screen and (min-width: 480px) and (max-width: 767px){
+@media only screen and (min-width: $media-screen-smrtphn-min-width) and (max-width: $media-screen-smrtphn-max-width){
 	header, h1, h2, li {
 		font-size: 1em;
 	}

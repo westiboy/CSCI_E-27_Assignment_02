@@ -1,3 +1,8 @@
+/* hi-res desktops up to and including 1920px width */
+/* average desktops between tablet size and hi-res */
+/* IOS devices in porttrait */
+/* lower-res tablets and phones */
+/* smartphone */
 @-ms-viewport {
   width: device-width;
 }
@@ -21,7 +26,6 @@ html {
 
 header, h1, h2, h3, h4 {
   font-family: "Indie Flower", cursive;
-  font-weight: 600italic;
   background-color: #DCF0FF;
 }
 
@@ -32,7 +36,7 @@ header h1 a {
 body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600italic;
-  background-color: #E9EAFF;
+  background-color: #EEDCFF;
 }
 
 a {
