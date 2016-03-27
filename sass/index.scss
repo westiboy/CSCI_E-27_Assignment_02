@@ -1,0 +1,115 @@
+//sass for index.html etc
+
+//variables
+$primary-background-color: #DCF0FF;
+$secondary-background-color: #D0C8E8;
+$alt1-background-color: #E9EAFF;
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font: 'Josefin' Sans;
+$wrpr-width: 97%;
+$wrpr-max-width: 1920px;
+//grid variables
+$col-1-width: 30%;
+$col-2-width: 65.55556%;
+$col-3-width: 96.66669%;
+
+//mixins
+@mixin prm-headings {
+	font-family: $primary-font;
+	font-weight: bold;
+	background-color: $primary-background-color;
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+/* Declare Border Box */
+html {
+	box-sizing: border-box;
+}
+/* this selector inherits to all elements in all pages */
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+/*	border: 1px solid red; */
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+header, h1, h2, h3, h4, h5{
+	@include prm-headings;
+}
+header {
+	background: url(../img/3_LarsEdit_fullBar.png) no-repeat;
+	width: 97%;
+	height: 50%;
+}
+header h1 {
+	padding: 0.5em;
+	margin: 0;
+}
+header h1 a {
+	text-decoration: none;
+}
+body {
+	font-family: $secondary-font;
+	background-color: $alt1-background-color;
+}
+a {
+	color: white;
+}
+.wrapper {
+	width: $wrpr-width;
+	max-width: $wrpr-max-width;
+	margin: 0 auto;
+	float: none;
+	background-color: $secondary-background-color;
+}
+nav {
+	background-color: #EEDCFF;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: auto;
+}
+nav ul li {
+	font-family: $primary-font;
+}
+nav ul a {
+	font-family: $primary-font;
+	font-weight: bold;
+	padding: 1em;
+	float: left;
+}
+nav ul a:hover, h1 a:hover {
+	color: $secondary-background-color;
+}
+div.col-1 img {
+	width: 100%;
+}
+
+/* grid settings */
+.row::after {
+    content:"";
+    display: table;
+    clear:both;
+} 
+[class*='col-'] {
+	margin-left: 3.333333%;
+	float: left;
+	min-height: 1px;
+}
+.col-1 {
+	width: $col-1-width;
+}
+.col-2 {
+	width: $col-2-width;
+}
+.col-3 {
+	width: $col-3-width;
+}

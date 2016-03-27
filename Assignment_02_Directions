@@ -1,0 +1,88 @@
+Assignment 2
+Assignment 2 is due on March 25, 2016, by 11:59 PM. Regrade and late policy are listed below. This assignment is worth 25% of your grade for the course.
+
+Build a Responsive Website
+Build a 2-3 page responsive website, using the principles discussed previously in class. 
+
+You may use your responsive website from Assignment 1 if you wish, or you may build a new one.  
+
+This responsive website should include the following features:
+
+A responsive website should include a grid system, media queries, and images that resize.
+Your grid system and media queries should be custom-coded.
+The grid system can have as many or as few columns as you require.
+You should include at least two media queries in your CSS. You may have more than this if you require it.
+The images that resize may be a solution that you download. Use one from class, or use another solution you’ve found that you like better.
+The site should include a navigation bar that links the relevant pages together, and it should be available on all pages of the site.
+Write your own content for the site. Please don’t use lorem ipsum or Wikipedia entries. The site can be about anything you want provided it’s work-safe, legal, ethical, and moral. If you are redesigning a page or two from a site, you may use that site’s content.
+Now add Sass
+Write, or rework, your CSS into Sass.
+When compiling your Sass, make sure the output is expanded, not nested or compact or compressed. (This is explained in the videos.)
+Make good use of variables, mixins, extend, nesting, math, built-in functions, etc.
+Use variables whenever values are repeated. Comment the section where variables are stored.
+Create at least 1 custom-coded mixin. Comment the section where mixins are stored.
+Demonstrate proper use of extend in at least 1 instance. This can extend an existing style or an extend-only class. Place a comment where the extend exists.
+Demonstrate nesting to 2 levels in at least one instance. Comment the area where nesting exists.
+Incorporate at least 2 instances of built-in Sass functions. You may use functions covered in class or any of the functions listed at the Sass website: http://sass-lang.com/documentation/Sass/Script/Functions.html (Links to an external site.) Comment where you’ve used a Sass function.
+Demonstrate the use of if/else in at least one instance. Comment your instance of if/else.
+You are not required to use loops or write your own functions with Sass, but you’re welcome to do so.
+Use at least 2 partial files in managing your Sass.
+Now add Compass
+Incorporate at least 3 Compass mixins in your code. Comment where those mixins occur and indicate they come from Compass.
+You may not count the reset CSS as a mixin. All other mixins count. 
+If you are ambitious and programmer-oriented, you may build custom functions or mixins using Compass helpers instead of using mixins directly. Be sure to document what you've done and explain it in the document when you turn in the assignment.
+What Jen cares about
+You create a grid system that makes sense with your design. It doesn’t have to be complicated, messy, or long to do well. Simple is fine.
+Your Sass is DRY and well-formed.
+HTML and CSS validate.
+What Jen doesn’t care about
+Your graphic design and color matching abilities/inabilities don’t matter to me. Neither does your ability/inability to make pretty pictures.
+I don’t care what compiler you use for Sass. Be aware that the Compass compiler may be the easiest way to fold Compass into your Sass -- you may have issues with other compilers.
+How to turn in your assignment
+Turn your assignment in via the Assignments link in Canvas.
+
+ 
+
+Include a Canvas comment or text file in your submission, indicating the following:
+
+Paste the URL for the assignment web page. You do not need to provide a link for the CSS.
+Indicate your browser/operating system combination (Mac/PC, Firefox/Chrome).
+Zip up your Sass files and upload these to the site as well. (We can’t see Sass files for grading!)
+Indicate which partial files and starting line numbers the following requirements are located on:
+Variables section
+Custom mixin
+Extend
+Nesting
+Built-in Sass functions
+If/else
+Compass mixins
+Oh no! I can’t make the deadline!
+This project is due on March 25, 2016, at 11:59 PM Eastern time. It is expected that you will turn the assignment in on time.
+
+You have one "free pass" to turn in one assignment late for this class. You may use this pass with assignment 1, 2, or 3, but not assignment 4 (due to Extension timelines and end of term). 
+
+Should you choose to use this late pass for this assignment, your assignment is due on March 28, 2016, at 11:59 PM Eastern time. You do not need to do anything special to activate the pass. Simply turn the assignment in late, exactly the way you would have done earlier. We will mark that you've used your free pass in the grade book. Make sure you turn Assignment 3 in on time, or you will receive a zero for that assignment.
+
+If you don't turn in Assignment 2 by March 28 at 11:59 PM, you will receive a zero for this assignment.
+
+Exceptions: In our experience, the #1 reason students need a late pass is due to poor planning. The lectures may look easy, but once you start working on your site, you may hit snags along the way. You need to plan for bad things to happen, both personally and professionally. If you have the assignment done early, that's not a tragedy!
+
+However, we know that life happens when you are in graduate school, and we are willing to work with you in extreme cases if you need an additional extension beyond the one provided. These exceptions include things like being in the hospital (or having a significant other or children in the hospital), a car accident or other debilitating accident, and so forth.
+
+Traveling for work or pleasure is NOT an exception -- budget your time to get the assignment in on time. (Jen has little sympathy for this request, as she is on the road for 29 days this term and still manages to post lectures weekly for two courses.)
+
+Being sick is NOT an exception, either for yourself or your children or significant other, unless this is an extreme case (like being in the hospital).
+
+I used my late pass in Assignment 1, now what?
+Your assignment is due on March 25, 2016, at 11:59 PM. Please budget your time accordingly.
+
+Grading timeline
+Grades will be posted online in Canvas. Jen will send an email to the class when these are ready for viewing. When this email is sent, Jen will indicate the date that regrade requests are due. Typically it takes 1-2 weeks to grade all assignments.
+
+Regrading of assignments
+You are permitted a regrade for either assignments 1, 2, or 3. Regrades are not permitted for assignment 4 due to the timing at the end of the term.
+
+Should you wish for a regrade on your assignment, submit your regrade within 3 days of the completion of grading. Jen will send an email when grading is complete with the due date for regrades. A courtesy email to Ed Hebert is appreciated, to indicate you'd like a regrade.
+
+Typically, regrades take longer than the first round of grading, because these are fit into our schedules as possible. If you have not received your regrade within 2 weeks of submitting it, email Ed Hebert to check on status.
+
