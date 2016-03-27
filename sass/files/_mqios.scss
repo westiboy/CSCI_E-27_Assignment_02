@@ -1,0 +1,18 @@
+/* IOS devices in porttrait */
+@media only screen and (min-width: $media-screen-ios-min-width) and (max-width: $media-screen-ios-max-width){
+	@include mq-color($media-screen-ios-min-width);
+
+	header, h1, h2, li {
+		font-size: 1.5em;
+	}
+	p {
+		font-size: 1.25em;
+	}
+	header {
+		@include mq-heading;
+	}
+	header h1 {
+		@include mq-heading-h1;
+		background: url(../img/Appian_Way_Pan_small.jpg) no-repeat;
+	}
+}

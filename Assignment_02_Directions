@@ -29,7 +29,7 @@ When compiling your Sass, make sure the output is expanded, not nested or compac
 [X] Incorporate at least 2 instances of built-in Sass functions. You may use functions covered in class or any of the functions listed at the Sass website: http://sass-lang.com/documentation/Sass/Script/Functions.html (Links to an external site.) Comment where you’ve used a Sass function.
 [X] Demonstrate the use of if/else in at least one instance. Comment your instance of if/else.
 - You are not required to use loops or write your own functions with Sass, but you’re welcome to do so.
-[] Use at least 2 partial files in managing your Sass.
+[X] Use at least 2 partial files in managing your Sass.
 
 * Now add Compass
 [] Incorporate at least 3 Compass mixins in your code. Comment where those mixins occur and indicate they come from Compass.

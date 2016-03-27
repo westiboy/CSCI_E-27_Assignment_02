@@ -1,0 +1,88 @@
+//more basic CSS begins
+@-ms-viewport{
+  width: device-width;
+}
+/* Declare Border Box */
+html {
+	box-sizing: border-box;
+}
+/* this selector inherits to all elements in all pages */
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+header, h1, h2, h3, h4  {
+	@include prm-headings;
+}
+header h1 a {
+	text-decoration: none;
+}
+body {
+	font-family: $secondary-font;
+	font-weight: 600italic;
+	background-color: $alt1-background-color;
+}
+a {
+	color: white;
+}
+.wrapper {
+	width: $wrpr-width;
+	max-width: $wrpr-max-width;
+	margin: 0 auto;
+	float: none;
+	background-color: $secondary-background-color;
+}
+
+//nesting begin
+nav {
+	font-family: $secondary-font;
+	background-color: $primary-background-color;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		overflow: auto;
+		a {
+			font-weight: bold;
+			padding: 1em;
+			float: left;
+		}
+		a:hover, h1 a:hover {
+			color: $secondary-background-color;
+		}
+	}
+}
+//nesting ends
+
+div.col-1 img {
+	width: 100%;
+}
+
+/* grid settings */
+.row::after {
+    content:"";
+    display: table;
+    clear:both;
+} 
+
+//.col-1 is extended to .col-2 and .col-3
+.col-1 {
+	margin-left: 3.333333%;
+	float: left;
+	min-height: 1px;
+	width: $col-1-width;
+}
+.col-2 {
+	@extend .col-1;
+	width: $col-2-width;
+}
+.col-3 {
+	@extend .col-1;
+	width: $col-3-width;
+}

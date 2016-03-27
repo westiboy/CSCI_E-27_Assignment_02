@@ -1,0 +1,22 @@
+/* Media Queries */
+/* hi-res desktops up to and including 1920px width */
+@media only screen and (min-width: $media-screen-hires-desk-min-width) {
+	@include mq-color($media-screen-hires-desk-min-width);
+
+	header, h1, h2 {
+		font-size: 2.25em;
+	}
+	li {
+		font-size: 1.5em;
+	}
+	p {
+		font-size: 2em;
+	}
+	header {
+		@include mq-heading;
+	}
+	header h1 {
+		@include mq-heading-h1;
+		background: url(../img/Appian_Way_Pan_large.jpg) no-repeat;
+	}
+}

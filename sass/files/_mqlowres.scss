@@ -1,0 +1,18 @@
+/* lower-res tablets and phones */
+@media only screen and (min-width: $media-screen-lowres-min-width) and (max-width: $media-screen-lowres-max-width){
+	@include mq-color($media-screen-lowres-min-width);
+
+	header, h1, h2, li {
+		font-size: 1.25em;
+	}
+	p {
+		font-size: 1em;
+	}
+	header {
+		@include mq-heading;
+	}
+	header h1 {
+		@include mq-heading-h1;
+		background: url(../img/Appian_Way_Pan_small.jpg) no-repeat;
+	}
+}

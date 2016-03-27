@@ -1,0 +1,18 @@
+/* smartphone */
+@media only screen and (min-width: $media-screen-smrtphn-min-width) and (max-width: $media-screen-smrtphn-max-width){
+	@include mq-color($media-screen-smrtphn-min-width);
+
+	header, h1, h2, li {
+		font-size: 1em;
+	}
+	p {
+		font-size: .75em;
+	}
+	header {
+		@include mq-heading;
+	}
+	header h1 {
+		@include mq-heading-h1;
+		background: url(../img/Appian_Way_Pan_small.jpg) no-repeat;
+	}
+}

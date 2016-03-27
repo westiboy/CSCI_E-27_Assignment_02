@@ -1,0 +1,43 @@
+//mixins
+//media query mixin/if/else
+@mixin mq-color($breakpoint: $media-screen-smrtphn-min-width) {
+	@if $breakpoint == $media-screen-hires-desk-min-width {
+		nav {
+		  background-color: $primary-background-color;
+		}
+	}
+	@else if $breakpoint == $media-screen-avg-min-width {
+		nav {
+		  background-color: pink;
+		}
+	}
+	@else if $breakpoint == $media-screen-ios-min-width {
+		nav {
+		  background-color: blue;
+		}
+	}
+	@else if $breakpoint == $media-screen-lowres-min-width {
+		nav {
+		  background-color: green;
+		}
+	}
+	@else if $breakpoint == $media-screen-smrtphn-min-width {
+		nav {
+		  background-color: orange;
+		}
+	}
+}
+
+@mixin prm-headings {
+	font-family: $primary-font;
+	font-weight: 600italic;
+	background-color: $primary-background-color;
+}
+@mixin mq-heading {
+	width: 97%;
+	height: 50%;
+}
+@mixin mq-heading-h1 {
+	padding: 0.5em;
+	margin: 0;
+}
